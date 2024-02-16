@@ -1,0 +1,68 @@
+body {
+  margin: 0 0;
+}
+
+header {
+  background-color: white;
+  margin: 0 128px;
+}
+
+.full-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.sub-header > * {
+  flex: 1;
+}
+
+.placeholder-img {
+  width: 200px;
+  background-color: lightpink;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.header-links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.header-links > svg {
+  width: 24px;
+}
+
+.project-links > svg {
+  width: 24px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-color: lightcyan;
+  }
+
+  header {
+    margin: 0 64px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+
+  header {
+    margin: 0 0;
+  }
+}
