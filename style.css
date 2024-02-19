@@ -30,6 +30,11 @@ footer {
   background-color: lightpink;
 }
 
+header img {
+  width: 200px;
+  object-fit: cover;
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -41,6 +46,7 @@ footer {
   justify-content: end;
   align-items: center;
   height: 30px;
+  margin-top: auto;
 }
 
 .footer-links {
@@ -157,13 +163,16 @@ footer > * {
   }
 }
 
-@media (max-width: 600px) {
-  .placeholder-img {
+@media (max-width: 850px) {
+  /* .placeholder-img {
     height: 200px;
+  } */
+  header img {
+    width: 100%;
   }
   .sub-header {
     flex-direction: column;
-    height: 500px;
+    height: fit-content;
   }
   .projects {
     grid-template-columns: 1fr;
