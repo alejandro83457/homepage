@@ -40,22 +40,33 @@ footer {
   display: flex;
   justify-content: end;
   align-items: center;
+  height: 30px;
 }
+
 .footer-links {
   display: flex;
   justify-content: end;
   align-items: center;
+  height: 30px;
 }
 
 .project-links {
   display: flex;
   justify-content: end;
+  height: 30px;
 }
 
 .header-links svg,
 .project-links svg,
 .footer-links svg {
   width: 24px;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+svg:hover {
+  width: 30px;
 }
 
 .project-img {
@@ -91,10 +102,6 @@ a {
   display: flex;
 }
 
-svg:hover {
-  fill: darkgray;
-}
-
 .project-overview,
 .about-me p,
 svg {
@@ -114,7 +121,9 @@ footer {
   gap: 4rem;
   justify-content: center;
   background-color: whitesmoke;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 footer > * {
@@ -125,7 +134,7 @@ footer > * {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media (max-width: 1000px) {
@@ -141,7 +150,7 @@ footer > * {
   }
   .contact-me {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0rem;
   }
   .projects {
     grid-template-columns: 1fr 1fr;
@@ -161,7 +170,7 @@ footer > * {
   }
   .contact-me {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0rem;
   }
   header,
   main {
